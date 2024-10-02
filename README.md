@@ -1,1 +1,1 @@
-C Programming Notes from Nitte
+C Programming Notes from Uni
