@@ -1,31 +1,55 @@
 #include <stdio.h>
 
-int main() {
+int main (void){
 
-  int n, i, flag = 0;
-  printf("Enter a positive integer: ");
-  scanf("%d", &n);
+    int a,flag=0; // flag=0 Assuming the number is prime
+    printf("Input any number:");
+    scanf("%d",&a);
 
-  // 0 and 1 are not prime numbers
-  // change flag to 1 for non-prime number
-  if (n == 0 || n == 1)
-    flag = 1;
+    if (a<=1)
+        flag=1;
 
-  for (i = 2; i <= n / 2; ++i) {
+    for(int i=2;i<=a/2;i++){
 
-    // if n is divisible by i, then n is not prime
-    // change flag to 1 for non-prime number
-    if (n % i == 0) {
-      flag = 1;
-      break;
-    }
-  }
+        if(a%i==0)
+        {
+            flag=1;
+            break;
+        }
+    }   
 
-  // flag is 0 for prime numbers
-  if (flag == 0)
-    printf("%d is a prime number.", n);
-  else
-    printf("%d is not a prime number.", n);
+    if(flag == 0)
+        printf("%d is a prime number", a);
+    else        
+        printf("%d is not a prime number", a);
 
-  return 0;
+
+    return 0;
 }
+
+//Another method (without flag)
+/*
+#include <stdio.h>
+
+int main (void){
+
+    int a;
+    printf("Input any number:");
+    scanf("%d",&a);
+
+    
+
+    for(int i=2;i<=a/2;i++){
+
+        if(a%i==0)
+        {
+            printf("%d is not a prime number", a);
+            return 0;
+        }
+    }   
+
+    printf("%d is a prime number", a);
+    
+    return 0;
+}
+*/
