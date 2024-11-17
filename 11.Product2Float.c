@@ -6,7 +6,7 @@ int main() {
     printf("Enter two integers: ");
     scanf("%f %f", &num1, &num2);
 
-    sum = num1 * num2;
+    product = num1 * num2;
 
     printf("Product of %f and %f is %f\n", num1, num2, product);
 
