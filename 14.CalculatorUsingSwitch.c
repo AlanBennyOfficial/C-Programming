@@ -39,3 +39,37 @@ int main(){
 
     return 0;
 }
+
+/*
+#include <stdio.h>
+
+int main(){
+
+    int num1, num2, choice;
+    
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    
+    printf("\nChoose an operation (+, -, *, /) by choosing numbers between 1 to 4: ");
+    scanf("%d", &choice);
+    
+    switch(choice) {
+        
+        case 1: printf("%d + %d = %d\n", num1, num2, num1+num2);
+                break;
+        
+        case 2: printf("%d - %d = %d\n", num1, num2, num1-num2);
+                break;
+
+        case 3: printf("%d x %d = %d\n", num1, num2, num1*num2);
+                break;
+
+        case 4: printf("%d / %d = %d\n", num1, num2, num1/num2);
+                break;
+        
+        default:printf("Invalid choice!\n");
+    }
+
+    return 0;
+}
+*/
