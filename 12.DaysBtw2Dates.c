@@ -48,3 +48,28 @@ int main(){
     printf("\nThe number of days between %d-%d-%d and %d-%d-%d is: %d\n", d1,m1,y1, d2,m2,y2, diff);
     return 0;    
 }
+
+// As written in the Lab record
+
+/*
+#include <stdio.h>
+
+int main(void) {
+    int d1, m1, y1;
+    int d2, m2, y2;
+    
+    printf("Enter the first date:");
+    scanf("%d-%d-%d", &d1,&m1,&y1);
+    printf("Enter the second date:");
+    scanf("%d-%d-%d", &d2,&m2,&y2);
+    
+    int totaldays1 = d1+(m1*30)+(y1*365);
+    int totaldays2 = d2+(m2*30)+(y2*365);
+    
+    int diff = totaldays2 - totaldays1;
+    
+    printf("Number of days between two dates is %d ", diff);
+    
+    return 0;
+}
+*/
